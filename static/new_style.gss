@@ -1,0 +1,76 @@
+@def GREEN  rgb(50, 192, 0);
+@def RED    rgb(192, 50, 0);
+@def CODE_BOXES_COLOR   rgb(230, 247, 230);
+
+@def CONTAINER_WIDTH    740px;
+
+@def FOOTER_HEIGHT        120px;
+@def LINE_HEIGHT        1.5em;
+@def FONT_WEIGHT        400;
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+
+* { margin: 0; }
+
+html { height: 100%; }
+
+body {
+    height: 100%;
+    font: 1em/LINE_HEIGHT 'Ubuntu Mono', sans-serif;
+    font-weight: FONT_WEIGHT;
+}
+
+h1, h2, h3, h4, h5, h6 { font-weight: FONT_WEIGHT; }
+
+a { text-decoration: none; color: GREEN; }
+a:hover { text-decoration: underline; color: RED; }
+a:after { content: " >>"; }
+
+.date { font-size: 14px; }
+.section { padding-top: 1.5em; }
+.section p { line-height: LINE_HEIGHT; padding-top: 1em; }
+
+.literal-block {
+    font-family: 'Droid Sans Mono', sans-serif;
+    font-size: 0.9em;
+    background-color: CODE_BOXES_COLOR;
+    border-radius: 5px;
+    padding: 5px 0 5px 5px;
+}
+
+.admonition-title, .last { font-size: 0.9em; color: RED; }
+p.last { padding-top: 0; }
+.tags { text-align: right; font-size: 14px; }
+
+.header h1 {
+    color: RED;
+    font-weight: FONT_WEIGHT;
+}
+
+.container {
+    height: 100%;
+    min-height: 100%;
+    /* @alternate */ height: auto !important;
+    width: CONTAINER_WIDTH;
+    margin: 0 auto sub(0px, FOOTER_HEIGHT);
+    padding-top: 20px;
+}
+
+.navigation { padding-bottom: 25px; }
+.navigation ul { list-style: none; padding-left: 0; }
+.navigation ul li { display: inline; margin-right: 2px; }
+
+/* Needed for the sticky footer: http://ryanfait.com/sticky-footer/ */
+.push { height: FOOTER_HEIGHT; }
+
+.footer                  {
+    width: CONTAINER_WIDTH;
+    height: FOOTER_HEIGHT;
+    margin: 0 auto 0;
+    border-top: 1px solid;
+}
+
+
+.entry-overview .detail hgroup h1 a { font-size: 18px; }
+.entry-overview .detail hgroup h2 p { font-size: 16px; font-weight: FONT_WEIGHT; }
