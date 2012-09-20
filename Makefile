@@ -1,7 +1,9 @@
-all: build serve
+all: clean build serve
+
+run: build serve
 
 clean:
-	rm -rf _build
+	rm -rf _build/*
 
 build:
 	run-rstblog build
