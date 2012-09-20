@@ -1,0 +1,10 @@
+---
+active_modules: [pygments, tags, blog]
+author: Edoardo Batini
+canonical_url: http://eolo999.github.com/
+feed:
+  name: Edoardo Batini's Blog
+  subtitle: Recent blog posts
+modules:
+  pygments:
+    style: pastie
