@@ -71,6 +71,9 @@ p.last { padding-top: 0; }
     border-top: 1px solid;
 }
 
-
 .entry-overview .detail hgroup h1 a { font-size: 18px; }
 .entry-overview .detail hgroup h2 p { font-size: 16px; font-weight: FONT_WEIGHT; }
+
+#disqus_thread {
+    padding-top: 25px;
+}

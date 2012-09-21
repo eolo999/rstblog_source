@@ -92,3 +92,6 @@ p.last {
   font-size: 16px;
   font-weight: 400;
 }
+#disqus_thread {
+  padding-top: 25px;
+}

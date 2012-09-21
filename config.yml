@@ -1,5 +1,5 @@
 ---
-active_modules: [pygments, tags, blog]
+active_modules: [pygments, tags, blog, disqus]
 author: Edoardo Batini
 canonical_url: http://eolo999.github.com/
 feed:
@@ -8,3 +8,6 @@ feed:
 modules:
   pygments:
     style: pastie
+  disqus:
+    shortname: eolo999
+    developer: 1
